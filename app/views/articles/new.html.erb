@@ -1,22 +1,23 @@
 <h1>Create a new article</h1>
 
 <div>
-	<% form_for(@article) do |f| %>
+	<p>
+	<%= form_for(@article) do |f| %>
 		
 		<p>
 			<%= f.label :title %>
-			<%= f.text field :title %>
+			<%= f.text_field :title %>
 		</p>
 
 		<p>
 			<%= f.label :content %>
-			<%= f.text field :content %>
+			<%= f.text_area :content %>
 		</p>
 
 
 		<p>
 			<%= f.label :author %>
-			<%= f.text field :author %>
+			<%= f.text_field :author %>
 		</p>
 
 
@@ -25,5 +26,6 @@
 		</p>
 
 	<% end %>
+	</p>
 
 </div>
