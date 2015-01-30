@@ -1,2 +1,29 @@
-<h1>Articles#new</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
+<h1>Create a new article</h1>
+
+<div>
+	<% form_for(@article) do |f| %>
+		
+		<p>
+			<%= f.label :title %>
+			<%= f.text field :title %>
+		</p>
+
+		<p>
+			<%= f.label :content %>
+			<%= f.text field :content %>
+		</p>
+
+
+		<p>
+			<%= f.label :author %>
+			<%= f.text field :author %>
+		</p>
+
+
+		<p>
+			<%= f.submit %>
+		</p>
+
+	<% end %>
+
+</div>
